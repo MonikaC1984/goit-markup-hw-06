@@ -86,9 +86,9 @@
               <div>
                 <p class="text-modal">Zostaw swoje dane w formularzu poniżej</p>
               </div>
-              <form>
+              <form class="form">
                 <label>
-                  Imię
+                  <p>Imię</p>
                   <input
                     class="text-label-modal"
                     type="imię"
@@ -97,7 +97,7 @@
                   />
                 </label>
                 <label>
-                  Telefon
+                  <p>Telefon</p>
                   <input
                     class="text-label-modal"
                     type="tel"
@@ -106,7 +106,7 @@
                   />
                 </label>
                 <label>
-                  Email
+                  <p>Email</p>
                   <input
                     class="text-label-modal"
                     type="email"
@@ -115,13 +115,21 @@
                   />
                 </label>
                 <label>
-                  Komentarz
+                  <p>Komentarz</p>
                   <textarea
                     class="text-label-modal"
                     name="feedback"
-                    rows="5"
                     placeholder="Wprowadź tekst"
                   ></textarea>
+                </label>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="oswiadczenie"
+                    value=""
+                    unchecked
+                  />
+                  Oświadczam iż akceptuję Regulamin i Politykę prywatności.
                 </label>
                 <button type="submit">Wyślij</button>
               </form>
