@@ -673,16 +673,20 @@ p.p {
   color: #757575;
 }
 
-.form {
-  position: relative;
-}
-.form label input {
-  display: block;
+.form .fieldset {
+  display: flex;
+  align-items: center;
   width: 448px;
   height: 40px;
   margin: 4px 40px 10px 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.form .fieldset:has(input:focus) {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  fill: #2196f3;
 }
 
 .form p {
@@ -692,23 +696,54 @@ p.p {
   letter-spacing: 0.01em;
   color: #757575;
 }
+.form svg {
+  margin: 11px 12px;
+}
+.form input {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
 
-.form textarea {
-  display: block;
+.form .comment {
   width: 448px;
   height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
   margin: 4px 40px 10px 40px;
   padding: 12px 16px;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form .fieldset .comment:has(input:focus) {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+.statement {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  outline: #ffffff;
+}
+
+.check-state {
+  width: 16px;
+  height: 15px;
+  background: #212121;
+  margin-right: 2px;
 }
 .form button {
   display: block;
-  position: absolute;
+  margin: 30px auto 40px;
   width: 200px;
   height: 50px;
   background: #2196f3;

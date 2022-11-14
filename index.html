@@ -89,48 +89,81 @@
               <form class="form">
                 <label>
                   <p>Imię</p>
-                  <input
-                    class="text-label-modal"
-                    type="imię"
-                    name="imię"
-                    placeholder=""
-                  />
+                  <fieldset class="fieldset">
+                    <svg width="18px" height="18px">
+                      <use
+                        xlink:href="./images/icons.svg#icon-person-black-18dp-1"
+                      ></use>
+                    </svg>
+                    <input
+                      class="text-label-modal"
+                      type="text"
+                      name="imię"
+                      placeholder=""
+                    />
+                  </fieldset>
                 </label>
+
                 <label>
                   <p>Telefon</p>
-                  <input
-                    class="text-label-modal"
-                    type="tel"
-                    name="tel"
-                    placeholder=""
-                  />
+                  <fieldset class="fieldset">
+                    <svg width="18px" height="18px">
+                      <use
+                        xlink:href="./images/icons.svg#icon-phone-black-18dp-1"
+                      ></use>
+                    </svg>
+                    <input
+                      class="text-label-modal"
+                      type="tel"
+                      name="tel"
+                      placeholder=""
+                    />
+                  </fieldset>
                 </label>
+
                 <label>
                   <p>Email</p>
-                  <input
-                    class="text-label-modal"
-                    type="email"
-                    name="email"
-                    placeholder=""
-                  />
+                  <fieldset class="fieldset">
+                    <svg width="18px" height="18px">
+                      <use
+                        xlink:href="./images/icons.svg#icon-email-black-18dp-1"
+                      ></use>
+                    </svg>
+                    <input
+                      class="text-label-modal"
+                      type="email"
+                      name="email"
+                      placeholder=""
+                    />
+                  </fieldset>
                 </label>
+
                 <label>
                   <p>Komentarz</p>
-                  <textarea
-                    class="text-label-modal"
-                    name="feedback"
-                    placeholder="Wprowadź tekst"
-                  ></textarea>
+                  <fieldset class="comment">
+                    <input
+                      class="text-label-modal"
+                      type="textarea"
+                      name="feedback"
+                      placeholder="Wprowadź tekst"
+                    />
+                  </fieldset>
                 </label>
-                <label>
-                  <input
-                    type="checkbox"
-                    name="oswiadczenie"
-                    value=""
-                    unchecked
-                  />
-                  Oświadczam iż akceptuję Regulamin i Politykę prywatności.
-                </label>
+                <div class="statement">
+                  <label>
+                    <input
+                      class="check-state"
+                      type="checkbox"
+                      name="oswiadczenie"
+                      value=""
+                      unchecked
+                    />
+                    <span>
+                      Oświadczam iż akceptuję <a href="">Regulamin</a> i
+                      <a href="">Politykę prywatności</a>.
+                    </span>
+                  </label>
+                </div>
                 <button type="submit">Wyślij</button>
               </form>
             </div>
