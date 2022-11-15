@@ -150,19 +150,23 @@
                   </fieldset>
                 </label>
                 <div class="statement">
-                  <label>
+                  <label class="checkbox">
                     <input
                       class="check-state"
                       type="checkbox"
                       name="oswiadczenie"
                       value=""
-                      unchecked
+                      opacity:0;
                     />
-                    <span>
-                      Oświadczam iż akceptuję <a href="">Regulamin</a> i
-                      <a href="">Politykę prywatności</a>.
-                    </span>
+                    <svg class="check-svg" width="11px" height="8px">
+                      <use xlink:href="./images/icons.svg#icon-Vector-1"></use>
+                    </svg>
                   </label>
+                  <span class="state-text">
+                    Oświadczam iż akceptuję
+                    <a href="">Regulamin</a> i
+                    <a href="">Politykę prywatności</a>.
+                  </span>
                 </div>
                 <button type="submit">Wyślij</button>
               </form>
