@@ -671,21 +671,29 @@ p.p {
   color: #212121;
 }
 
-.form .fieldset {
+.fieldset {
   position: relative;
   display: flex;
   align-items: center;
   width: 448px;
-  margin-top: 4px;
-  margin-bottom: 10px;
+  margin-top: 28px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-label-modal {
+  position: absolute;
+  top: -18px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.label-modal {
   padding-top: 13px;
   padding-bottom: 13px;
+  padding-left: 16px;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -719,12 +727,13 @@ p.p {
   background-color: transparent;
 }
 
-.form .comment {
+.comment {
+  position: relative;
   width: 448px;
   height: 120px;
-  margin-top: 4px;
+  margin-top: 28px;
   margin-bottom: 20px;
-  padding-left: 16px;
+
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
