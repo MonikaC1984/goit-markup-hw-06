@@ -691,15 +691,22 @@ p.p {
   color: #757575;
 }
 .label-modal {
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 16px;
+  width: 100%;
+  padding: 13px 13px 13px 40px;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
 }
 
+.label-modal-textarea {
+  width: 100%;
+  padding: 13px 13px 13px 16px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
 .fieldset-svg {
   position: absolute;
   top: 1px;
