@@ -90,51 +90,51 @@
                 <label>
                   <p>Imię</p>
                   <fieldset class="fieldset">
-                    <svg width="18px" height="18px">
-                      <use
-                        xlink:href="./images/icons.svg#icon-person-black-18dp-1"
-                      ></use>
-                    </svg>
                     <input
                       class="text-label-modal"
                       type="text"
                       name="imię"
                       placeholder=""
                     />
+                    <svg class="fieldset-svg" width="18px" height="18px">
+                      <use
+                        xlink:href="./images/icons.svg#icon-person-black-18dp-1"
+                      ></use>
+                    </svg>
                   </fieldset>
                 </label>
 
                 <label>
                   <p>Telefon</p>
                   <fieldset class="fieldset">
-                    <svg width="18px" height="18px">
-                      <use
-                        xlink:href="./images/icons.svg#icon-phone-black-18dp-1"
-                      ></use>
-                    </svg>
                     <input
                       class="text-label-modal"
                       type="tel"
                       name="tel"
                       placeholder=""
                     />
+                    <svg class="fieldset-svg" width="18px" height="18px">
+                      <use
+                        xlink:href="./images/icons.svg#icon-phone-black-18dp-1"
+                      ></use>
+                    </svg>
                   </fieldset>
                 </label>
 
                 <label>
                   <p>Email</p>
                   <fieldset class="fieldset">
-                    <svg width="18px" height="18px">
-                      <use
-                        xlink:href="./images/icons.svg#icon-email-black-18dp-1"
-                      ></use>
-                    </svg>
                     <input
                       class="text-label-modal"
                       type="email"
                       name="email"
                       placeholder=""
                     />
+                    <svg class="fieldset-svg" width="18px" height="18px">
+                      <use
+                        xlink:href="./images/icons.svg#icon-email-black-18dp-1"
+                      ></use>
+                    </svg>
                   </fieldset>
                 </label>
 
@@ -149,28 +149,27 @@
                     />
                   </fieldset>
                 </label>
-                <div class="statement">
-                  <label>
-                    <input
-                      class="checkbox"
-                      type="checkbox"
-                      name="oswiadczenie"
-                      value=""
-                    />
-                    <span class="check-border">
-                      <svg class="check-svg" width="11px" height="8px">
-                        <use
-                          xlink:href="./images/icons.svg#icon-Vector-1"
-                        ></use>
-                      </svg>
-                    </span>
-                  </label>
+
+                <label class="statement">
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    name="oswiadczenie"
+                    value=""
+                  />
+                  <span class="check-border">
+                    <svg class="check-svg" width="11px" height="8px">
+                      <use xlink:href="./images/icons.svg#icon-Vector-1"></use>
+                    </svg>
+                  </span>
+
                   <span class="state-text">
                     Oświadczam iż akceptuję
                     <a href="">Regulamin</a> i
                     <a href="">Politykę prywatności</a>.
                   </span>
-                </div>
+                </label>
+
                 <button type="submit">Wyślij</button>
               </form>
             </div>
@@ -513,20 +512,22 @@
           <p class="join">Zapisz się do newslettera</p>
           <div>
             <form>
-              <label class="newsletter-box">
-                <input
-                  class="newsbox-email"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                />
+              <div class="newsletter-box">
+                <label>
+                  <input
+                    class="newsbox-email"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </label>
                 <button class="news-button" type="submit">
-                  <p class="text">Zapisz&nbspsię</p>
-                  <svg widht="24" height="24">
+                  <p class="text">Zapisz się</p>
+                  <svg class="news-svg" width="24" height="24">
                     <use xlink:href="./images/icons.svg#icon-icon-send"></use>
                   </svg>
                 </button>
-              </label>
+              </div>
             </form>
           </div>
         </div>
