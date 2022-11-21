@@ -637,6 +637,7 @@ p.p {
 
 .modal {
   position: relative;
+  width: 528px;
   margin: auto;
   padding: 40px;
   background-color: var(--color-header);
@@ -724,27 +725,36 @@ p.p {
   border: 0;
   background-color: transparent;
 }
-.label-modal-textarea {
-  width: 100%;
-  height: 120px;
-  resize: none;
-  border: none;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: #757575;
-  color: rgba(117, 117, 117, 0.5);
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.textarea-label {
+  display: block;
+  margin-top: 10px;
 }
-
 .text-textarea {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
+}
+
+.label-modal-textarea {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: none;
+  padding: 12px 16px;
+  color: #757575;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.label-modal-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .label-modal-textarea:focus {
