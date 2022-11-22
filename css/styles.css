@@ -637,7 +637,6 @@ p.p {
 
 .modal {
   position: relative;
-  width: 528px;
   margin: auto;
   padding: 40px;
   background-color: var(--color-header);
